@@ -16,6 +16,17 @@ set showmatch
 set backupdir=~/.vim/backup//
 set directory=~/.vim/swap//
 set undodir=~/.vim/undo//
+set nocompatible
+
+autocmd Filetype html setlocal ts=3 sw=3
+autocmd Filetype blade setlocal ts=3 sw=3
+
+
+filetype off
+let &runtimepath.=',~/.vim/bundle/ale'
+filetype plugin on
+
+silent! helptags ALL
 
 map <C-j> <C-W>j
 map <C-k> <C-W>k
