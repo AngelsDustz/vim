@@ -20,6 +20,8 @@ set nocompatible
 
 autocmd Filetype html setlocal ts=3 sw=3
 autocmd Filetype blade setlocal ts=3 sw=3
+autocmd Filetype vue setlocal ts=3 sw=3
+autocmd Filetype php setlocal ts=4 sw=4
 
 
 filetype off
