@@ -1,6 +1,6 @@
 syntax enable
 
-colorscheme elflord
+colorscheme onedark
 
 set ffs=unix,dos,mac
 set encoding=utf8
@@ -17,6 +17,11 @@ set backupdir=~/.vim/backup//
 set directory=~/.vim/swap//
 set undodir=~/.vim/undo//
 set nocompatible
+set term=screen-256color
+
+if &term =~ '256color'
+	set t_ut=
+endif
 
 autocmd Filetype html setlocal ts=3 sw=3
 autocmd Filetype blade setlocal ts=3 sw=3
@@ -27,6 +32,7 @@ autocmd Filetype php setlocal ts=4 sw=4
 filetype off
 let &runtimepath.=',~/.vim/bundle/ale'
 filetype plugin on
+set omnifunc=syntaxcomplete#Complete
 
 silent! helptags ALL
 
