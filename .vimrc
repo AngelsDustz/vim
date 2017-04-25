@@ -17,7 +17,6 @@ set backupdir=~/.vim/backup//
 set directory=~/.vim/swap//
 set undodir=~/.vim/undo//
 set nocompatible
-set term=screen-256color
 
 if &term =~ '256color'
 	set t_ut=
