@@ -2,11 +2,14 @@ syntax enable
 
 colorscheme onedark
 
+set showmode
+set number
+set shiftround
 set ffs=unix,dos,mac
 set encoding=utf8
-set noexpandtab
 set shiftwidth=8
 set tabstop=8
+set expandtab
 set autoindent
 set autoread
 set hlsearch
@@ -25,6 +28,7 @@ endif
 autocmd Filetype html setlocal ts=3 sw=3
 autocmd Filetype blade setlocal ts=3 sw=3
 autocmd Filetype vue setlocal ts=3 sw=3
+autocmd Filetype xml setlocal ts=3 sw=3
 autocmd Filetype php setlocal ts=4 sw=4
 
 
